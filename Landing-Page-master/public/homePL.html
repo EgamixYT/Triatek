@@ -31,10 +31,10 @@
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
           href="./index.html">
           <!--Icon from: http://www.potlabicons.com/ -->
-          <img src="./triateklogo@2x-8.png" alt="">
+          <img src="./triateklogo@2x-8.png" class="w-64" alt="">
         </a>
       </div>
-      <!-- <div class="block lg:hidden pr-4">
+      <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
           class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
-      </div> -->
+      </div>
       <div
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
         id="nav-content">
@@ -50,17 +50,22 @@
           <li class="mr-3">
             <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#"></a>
           </li>
+          <li class="flex justify-center visible lg:hidden text-xl mb-4">
+            Choose your language:
+          </li>
+          <div class="flex justify-center">
           <li class="mr-3">
-            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-semibold bg-white rounded-full"
-              href="homeUA.html">UA</a>
+            <a class="inline-block text-white lg:text-black no-underline hover:text-gray-300 lg:hover:text-gray-800 hover:text-underline py-2 px-4 font-semibold  bg-blue-500 lg:bg-white rounded-full"
+              href="index.html">UA</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 font-semibold bg-white rounded-full"
+            <a class="inline-block text-white lg:text-black no-underline hover:text-gray-300 lg:hover:text-gray-800 hover:text-underline py-2 px-4 font-semibold  bg-blue-500 lg:bg-white rounded-full"
               href="homeEN.html">EN</a>
           </li>
+        </div>
         </ul>
-        <a id="navAction" href="#form"
-          class="mx-auto lg:mr-4 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <a id="navAction"  href="#form"
+          class="mx-auto invisible no-underline lg:visible lg:mr-4 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Zamów połączenie
         </a>
       </div>
@@ -87,13 +92,13 @@
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-full md:w-4/5 z-50" src="biglogo@3x-8.png" />
+        <img class="w-full md:w-4/5 z-50 hidden sm:block" src="biglogo@3x-8.png" />
         <div class="w-full ">
           <div
-            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 text-center space-x-8 text-2xl font-semibold text-blue-500">
-            <p class="bg-white bg-opacity-60 my-4 ml-6  p-7 rounded-full">Wentylacja</p>
-            <p class="bg-white bg-opacity-60 m-4 py-7 truncate rounded-full">Klimatyzacja</p>
-            <p class="bg-white bg-opacity-60 m-4 p-7 rounded-full">Ogrzewanie</p>
+            class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 text-center space-x-0 lg:space-x-8 text-2xl font-semibold text-blue-500 bg-white  my-2 rounded-xl ">
+            <p class="my-4 ml-0 lg:ml-6 p-7 rounded-full">Wentylacja</p>
+            <p class="m-4 py-7 truncate">Klimatyzacja</p>
+            <p class="m-4 p-7 rounded-full">Ogrzewanie</p>
           </div>
         </div>
       </div>
@@ -124,6 +129,9 @@
   </div>
   <!-- features section -->
   <div class="bg-white">
+    <div class="text-black text-2xl lg:text-5xl text-center pt-4 text-gray-700 font-semibold ">
+      Projekt, montaż, serwis
+    </div>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
@@ -191,11 +199,9 @@
                       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg> 3500
+                    </svg> ~3500
                   </p>
-                  <p class="mt-3 text-xl text-gray-500">zrealizowane projekty
-                    w apartamentach i domkach
-                    stan na grudzień 2020 r.</p>
+                  <p class="mt-3 text-xl text-gray-500">Zrealizowane projekty</p>
                 </p>
               </div>
             </div>
@@ -217,11 +223,10 @@
                       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg> 1000
+                    </svg>~1000
                   </p>
                   <p class="mt-3 text-xl text-gray-500">
-                    nazwy
-                    towary w
+                    Towary w
                     asortyment
                   </p>
                 </p>
@@ -245,12 +250,11 @@
                       viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg> 24
+                    </svg> 12
                   </p>
                   <p class="mt-3 text-xl text-gray-500">
                     regiony Ukrainy
                     mają nasze projekty
-                    (22 od 2020 r.)
                   </p>
                 </p>
               </div>
@@ -262,7 +266,7 @@
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Współpracując z nami otrzymujesz:
+        Zalety współpracy z nami:
       </h1>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -361,7 +365,7 @@
   </div>
 
   <!-- Change the colour #f8fafc to match the previous section colour -->
-  <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  <svg id="form" class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
@@ -405,7 +409,7 @@
   <!-- form section -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue@3"></script>
-  <div id="form" class=" flex justify-center w-full mb-12">
+  <div class=" flex justify-center w-full mb-12">
     <div class="grid grid-cols-1 space-y-4 w-1/2">
       <span>
         <label for="email" class="block text-md font-medium text-gray-100">Email</label>
