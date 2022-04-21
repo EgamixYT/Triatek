@@ -23,7 +23,7 @@
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradient overflow-auto" style="font-family: 'Source Sans Pro', sans-serif;">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -481,7 +481,7 @@
       // console.log(document.getElementById('email').value);
       axios({
         method: 'post',
-        url: `https://api.telegram.org/bot5194132314:AAE2MD9g-Q7EBzrFR_kDEY3hmogL6TKpY68/sendMessage?chat_id=-1001558180097&parse_mode=html&text=${'email: '}${document.getElementById('email').value}${'n\ name: '}${document.getElementById('name').value}${'n\ phone: '}${document.getElementById('phone').value}`,
+        url: `https://api.telegram.org/bot5194132314:AAE2MD9g-Q7EBzrFR_kDEY3hmogL6TKpY68/sendMessage?chat_id=-1001558180097&parse_mode=html&text=${'email: '}${document.getElementById('email').value}${'name: '}${document.getElementById('name').value}${'phone: '}${document.getElementById('phone').value}`,
         data: {
           firstName: 'Fred',
           lastName: 'Flintstone'
@@ -825,6 +825,8 @@
       return false;
     }
   </script>
+  <style>
+  </style>
 </body>
 
 </html>
